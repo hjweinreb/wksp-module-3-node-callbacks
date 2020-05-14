@@ -14,6 +14,9 @@ Only move on to the next question when you have enough detail that you would be 
 
 ```
 // Answer here
+Make the the ejs pages/partials. style them. 
+Link the back end to handle form actions of the to do list
+send the input back to the ejs file where it will be rendered in a different section
 
 ```
 
@@ -28,6 +31,8 @@ _The NPM site might be a good place to start. Feel free to provide links as rele
 ```
 // Answer here
 
+to parse the json of req.body
+
 ```
 
 ## Three - `server.js`
@@ -36,6 +41,9 @@ Look at lines `23` and `24`. Explain the methods used. How are they different? W
 
 ```
 // Answer here
+
+23 is just telling the server to render a certain page 
+24 is actually sending new data to the server to be stored or checked etc...
 
 ```
 
@@ -46,6 +54,8 @@ Line `6`. That's new. What do you think it's for?
 ```
 // Answer here
 
+We're storing the handlers in a different page and importing them so it's less messy
+
 ```
 
 ## Five - `handlers.js`
@@ -55,6 +65,8 @@ Explain line `1`. Where, why and how is `items` being used?
 ```
 // Answer here
 
+Items is the array that new to-do list items are being pushed to and it's being re-rendered on the front-end
+
 ```
 
 ## Six - `handlers.js`
@@ -62,7 +74,9 @@ Explain line `1`. Where, why and how is `items` being used?
 Why is there `redirect` on line `11`;
 
 ```
-// Answer here
+// Answer here  
+
+it's redirecting the default submit url, sort of acting as a event.preventDefault()
 
 ``` 
 
@@ -73,6 +87,8 @@ The `handle404` function is a more complex than we've seen thus far, what is the
 ```
 // Answer here
 
+It's handling both endpoint and data errors
+
 ```
 
 ## Eight - `ejs`
@@ -82,6 +98,7 @@ Take a look at `homepage.ejs` and `todoInput.ejs`. What is happening in there? E
 ```
 // Answer here
 
+homepage is the page being rendered that includes the partials. todoInput is the actual form partial being included in homepage
 ```
 
 ## Nine - `styles.scss`
@@ -91,6 +108,8 @@ What are lines `2` to `7` for this file? Where are these values being used? Take
 ```
 // Answer here
 
+They are setting global styles for the scss to be used frequently
+
 ```
 
 ## Ten - `_homepage.scss`
@@ -99,6 +118,8 @@ Line `16`. See if by searching the Sass documentation, you can determine what _e
 
 ```
 // Answer here
+
+it's setting the global content width to 60px less for this particular element
 
 ```
 

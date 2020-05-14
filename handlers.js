@@ -1,4 +1,4 @@
-const items = [];
+const items = []; // setting an empty variable
 
 const handleHomePage = (req, res) => {
     res.render('pages/homepage', { items: items })
